@@ -5,27 +5,29 @@
         <meta charset="utf-8">
         <title>Hannes Ojala</title>
         <style>
-            h1 {
-                text-align: center;
-            }
             a {
                 color: rgb(255, 200, 100);
             }
+            .skills {
+                font-family: monospace;
+            }
             .links {
+                text-align: center;
                 font-weight: bolder;
                 color: rgb(255, 100, 100);
             }
-            img {
-                display:block;
+            .title {
                 margin:auto;
+                display: inline;
+                text-align: center;
             }
             body {
                 color: white;
                 margin: auto;
-                margin-top: 5%;
+                margin-top: 2.5%;
                 width: 600px;
-                font-family: serif;
-                font-size: 18px;
+                font-family: monospace;
+                font-size: 16px;
                 background-color: rgb(16, 16, 24);
                 border: 1px solid rgb(255, 100, 100);
                 padding: 1em;
@@ -34,22 +36,44 @@
     </head>
 
     <body>
-        <h1>Hannes Stuff</h1>
-        <hr>
+        <div class="title">
+            <h1>
+                <img src="./construction.gif"width="64" height="64"></img>
+                Hannes Stuff
+                <img src="./construction.gif"width="64" height="64"></img>
+            </h1>
+        </div>
+        <br>
 
         <div class="links">
             Links: <a href="https://github.com/hannesojala/">Github</a>
             <a href="https://people.ucsc.edu/~hojala/">UCSC</a>
         </div>
-        <hr>
 
         <p>
             I'm Hannes Ojala. This website has some things related to me.
         </p>
         <hr>
 
-        <img src="./construction.gif"
-            width="128" height="128"></img>
+        <div class="projs">
+            Some Things
+            <ul>
+                <li><a href="https://hannesojala.github.io/webgl-pbr/">Physically Based Rendering demo</a><br>Small raw webgl2 renderer</li>
+                <li><a href="https://hannesojala.github.io/dfamin/">DFA minimizer</a><br>Ugly browser console tool</li>
+                <li><a href="https://github.com/hannesojala/2.5D-Portal-Engine/">Portal Engine</a><br>A short experiment in Build engine style rendering</li>
+                <li><a href="https://github.com/hannesojala/pbrengine">Rendering Engine</a><br>*Very* work in progress. Looking for advice.</li>
+                <li><a href="https://github.com/hannesojala/NBody2D">2D Nbody sim.</a><br>Someday I'll implement a quadtree optimization</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="skills">
+            Skills
+            <ul>
+                <li>Languages: C++, GLSL/HLSL, C, Python, JS, Scheme</li>
+                <li>Graphics, Simulation, PBR, Ability to read papers</li>
+            </ul>
+        </div>
         <hr>
 
         On web design:
