@@ -16,10 +16,18 @@
                 font-weight: bolder;
                 color: rgb(255, 100, 100);
             }
+            .welcome_msg {
+                text-align: center;
+            }
             .title {
                 margin:auto;
                 display: inline;
                 text-align: center;
+            }
+            .block > hr {
+                height: 1px;
+                background-color: rgb(255, 64, 64);
+                border: none;
             }
             .block {
                 border: 1px solid rgb(255, 64, 64);
@@ -30,7 +38,7 @@
             body {
                 color: white;
                 margin: auto;
-                width: 666px;
+                width: 800px;
                 font-family: monospace;
                 font-size: 16px;
                 line-height: 1.6;
@@ -44,9 +52,7 @@
     <div class="block">
         <div class="title">
             <h2>
-                <img src="./construction.gif"width="64" height="64"></img>
                 Hannes Stuff
-                <img src="./construction.gif"width="64" height="64"></img>
             </h1>
         </div>
 
@@ -55,39 +61,45 @@
             <a href="https://people.ucsc.edu/~hojala/">UCSC</a>
         </div>
 
-        <p>
+        <div class="welcome_msg">
             I'm Hannes Ojala. This website has some things related to me.
-        </p>
+        </div>
         <hr>
 
         <div class="projs">
-            Some Things
+            Some Things 
             <ul>
-                <li><a href="https://hannesojala.github.io/webgl-pbr/">Physically Based Rendering demo</a><br>Small raw webgl2 renderer</li>
-                <li><a href="https://github.com/hannesojala/pbrengine">Rendering Engine</a><br>*Very* work in progress. Looking for advice.</li>
-                <li><a href="https://github.com/hannesojala/NBody2D">2D Nbody sim.</a><br>Someday I'll implement a quadtree optimization</li>
-                <li><a href="https://github.com/hannesojala/2.5D-Portal-Engine/">Portal Engine</a><br>A short experiment in Build engine style rendering</li>
-                <li><a href="https://hannesojala.github.io/dfamin/">DFA minimizer</a><br>Ugly browser console tool</li>
+                <li><a href="https://hannesojala.github.io/webgl-pbr/">Physically Based Renderer</a><br>
+                    Raw Webgl2, metalness PBR workflow, and normal mapping. Lots of bad JS.</li>
+                <li><a href="https://github.com/hannesojala/fluid_sim">Real time fluid simulator</a><br>
+                    My first project in Rust. Aim to move to WebGL.</li>
+                <li><a href="https://github.com/hannesojala/pbrengine">Rendering Engine</a><br>
+                    *Very* work in progress. Looking for advice.</li>
+                <li><a href="https://github.com/hannesojala/NBody2D">2D Nbody sim.</a><br>
+                    Someday I'll implement a quadtree optimization.</li>
+                <li><a href="https://github.com/hannesojala/2.5D-Portal-Engine/">Portal Engine</a><br>
+                    A short experiment in Build engine style rendering.</li>
+                <li><a href="https://hannesojala.github.io/dfamin/">DFA minimizer</a><br>
+                    Ugly browser console tool that... minimizes deterministic finite automata.</li>
             </ul>
         </div>
         <hr>
 
         <div class="skills">
-            Skills
+            Skills, in no particular order <br>
+            
+            <u>Programming Languages</u> <br>
             <ul>
-                <li>Languages: C++, GLSL/HLSL, C, Python, JS, Scheme</li>
+                <li>Proficient with: C/C++, Rust, Python, JS, GLSL</li>
+                <li>Familiar with: Rust, HLSL, Scheme/Racket, Ocaml, Ruby, Smalltalk, Perl</li>
+            </ul>
+            <u>Interests and Specialties</u>> <br>
+            <ul>
                 <li>Graphics, Some tensorflow/keras, Simulation, PBR, Ability to read papers</li>
             </ul>
         </div>
         <hr>
 
-        On web design:
-        <a href="http://motherfuckingwebsite.com/">One</a>
-        <a href="http://bettermotherfuckingwebsite.com/">Two</a>
-        <a href="https://bestmotherfucking.website/">Three</a>
-        <a href="https://alisdair.mcdiarmid.org/kill-sticky-headers/">Four</a>
     </div>
-
     </body>
-
 </html>
